@@ -15,9 +15,7 @@ public class NioTest11 {
     public static void main(String[] args) throws Exception{
 
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
-
         InetSocketAddress address = new InetSocketAddress(8899);
-
         serverSocketChannel.socket().bind(address);
 
         int messageLength = 2+3+4;
